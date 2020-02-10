@@ -1,0 +1,712 @@
+
+		
+body
+{
+	background-color: #5DB5A4;
+	margin: 10px auto; 
+	height: 100%/*3500px*/;
+	width: 100%/*1300px*/;
+
+}
+
+
+@font-face
+{
+	font-family: "roboto";
+	src:url(Fuentes/Roboto/RobotoCondensed-Italic.ttf), url(Fuentes/Roboto/RobotoCondensed-Italic.eot), url(Fuentes/Roboto/RobotoCondensed-Italic.otf);
+}
+@font-face
+{
+	font-family: "Lobster";
+	src:url(Fuentes/Lobster/LobsterTwo-Bold.ttf), url(Fuentes/Lobster/LobsterTwo-Bold.eot), url(Fuentes/Lobster/LobsterTwo-Bold.otf);
+}
+@font-face
+{
+	font-family:"Inconsolata";
+	src:url(Fuentes/Inconsolata/Inconsolata-Bold.ttf), url(Fuentes/Inconsolata/Inconsolata-Bold.eot), url(Fuentes/Inconsolata-Bold.otf);
+}
+@font-face
+{
+	font-family: "Comfortaa";
+	src:url(Fuentes/Comfortaa/Comfortaa-Bold.ttf), url(Fuentes/Comfortaa/Comfortaa-Bold.eot), url(Fuentes/Comfortaa/Comfortaa-Bold.otf);
+}
+
+.estilo1
+{
+	font-family: "roboto";
+}
+.estilo2
+{
+	font-family: "Lobster";
+	font-size: 20px;
+}
+.estilo4
+{
+	font-family:"Inconsolata";
+}
+.estilo5
+{
+	font-family: "Comfortaa";
+	font-size: 24px;
+	font-weight: bolder;
+}
+
+#colorenunciados
+{
+	background: rgb(62,214,32); 
+	background: -moz-linear-gradient(-45deg, rgba(62,214,32,1) 8%, rgba(62,214,32,1) 8%, rgba(62,214,32,1) 16%, rgba(62,214,32,1) 26%, rgba(43,226,2,1) 41%, rgba(62,214,32,1) 52%, rgba(62,214,32,1) 57%, rgba(62,214,32,1) 62%, rgba(40,229,11,1) 73%, rgba(62,214,32,1) 83%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(62,214,32,1) 8%,rgba(62,214,32,1) 8%,rgba(62,214,32,1) 16%,rgba(62,214,32,1) 26%,rgba(43,226,2,1) 41%,rgba(62,214,32,1) 52%,rgba(62,214,32,1) 57%,rgba(62,214,32,1) 62%,rgba(40,229,11,1) 73%,rgba(62,214,32,1) 83%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(62,214,32,1) 8%,rgba(62,214,32,1) 8%,rgba(62,214,32,1) 16%,rgba(62,214,32,1) 26%,rgba(43,226,2,1) 41%,rgba(62,214,32,1) 52%,rgba(62,214,32,1) 57%,rgba(62,214,32,1) 62%,rgba(40,229,11,1) 73%,rgba(62,214,32,1) 83%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ed620', endColorstr='#3ed620',GradientType=1 ); 
+}
+
+		/*Parte1*/
+
+#Fondo /*Div principal*/
+{
+	position: relative; 
+	width: 90%/*1290px*/; 
+	height: 100%; 
+	background-color: #5DB5A4;
+	margin: 5px auto;	
+	text-align: center;
+}
+
+
+		/*Parte 2*/
+
+#Presentacion /*div de presentacion de sitio*/
+{
+	border: solid;
+	border-color: #000;
+	border-width: 1px;
+	height: 450px; 
+	width: 100%;/*1290px*/; 
+	margin: 5px auto;
+	overflow: hidden;/*Para ocultar todo aquello que salga del espacio asignado del contenedor*/
+	text-align: center;
+
+}
+#Presentacion ul 
+{
+	width: 400%;
+	display: flex;
+	margin-top: 0%;
+	padding: 0;
+
+	animation: Cambio 20s infinite alternate linear;
+
+}
+@keyframes Cambio
+{
+	5%{margin-left: 0%}
+	25%{margin-left: 0%}
+
+	30%{margin-left: -100%}
+	50%{margin-left: -100%}
+
+	55%{margin-left: -200%}
+	75%{margin-left: -200%}
+
+	80%{margin-left: -300%}
+	100%{margin-left: -300%}
+}
+#Presentacion li
+{
+	height: 100%;
+	width: 100%;
+	list-style: none;
+}
+#Presentacion img /*dimensiones de la imagen de presentacion*/
+{
+	width: 100%;
+	height: 100%;
+}
+
+
+		/*Parte 3*/
+
+#Inicio /*espacio del logo*/
+{
+	background-color: #E1E6FA; 
+	text-align: center; 
+	border-top: none;
+	border-bottom: none;
+	height: 450px;
+	width: 250px; 
+	margin-top: -456px; 
+	margin-left: 10%;
+	position: absolute;
+}
+
+
+		/*Parte 4*/
+
+#nave /*Parte del nav */
+{
+	padding: 0px/15px; 
+	width: 90%;
+	margin-left: 10%;/*dandole estilo a la navegacion de modo que no cubra todo el ancho de la pagina(inicie mas hacia la derecha)*/ 
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	border-radius: 25px;
+	
+	background: rgb(245,246,246); 
+	background: -moz-linear-gradient(top, rgba(245,246,246,1) 8%, rgba(245,246,246,1) 16%, rgba(195,197,201,1) 55%, rgba(245,246,246,1) 84%, rgba(245,246,246,1) 88%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(245,246,246,1) 8%,rgba(245,246,246,1) 16%,rgba(195,197,201,1) 55%,rgba(245,246,246,1) 84%,rgba(245,246,246,1) 88%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(245,246,246,1) 8%,rgba(245,246,246,1) 16%,rgba(195,197,201,1) 55%,rgba(245,246,246,1) 84%,rgba(245,246,246,1) 88%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); 
+}
+
+#nave ul /*estilo del ul*/
+{
+	margin-left: 50%;/*dandole mas espacio del margen izquierdo del ul para darle el estilo que quiero(que las lista se situe del lado derecho)*/
+}
+
+#nave li /*estilo del menu*/
+{
+	display: inline-block;
+	list-style:none; /*sin estilo de lista*/
+	padding: 5px; 
+	margin-left: 40px;/*Mas espacio entre las listas de manera que nose situen tan cerca una de otra*/
+	color: #000;
+}
+#a
+{
+	color: #000;
+}
+li #a:hover
+{
+		background-color:  #60C6C3;
+		color: #FFF;
+}
+
+		/*Parte 5*/
+
+#seccion /*contenedor de todo el contenido*/
+{
+	width: 94%; 
+	height: 95%;
+	margin-left: 3%; 
+	margin-right: 3%;
+	position: relative;
+	background-color: #E1E6FA;
+}
+		
+
+		/*Parte 6*/
+
+#info	/*1er articulo del section*/
+{
+	height: 7%; /*tamaño del article dentro del section*/
+	margin-right: 25%; 
+	text-align: center;
+	-webkit-box-shadow:5px 10px 18px #aaaaaa;/*sombra de los bordes*/
+	-moz-box-shadow:5px 10px 18px #aaaaaa;
+	box-shadow: 5px 10px 18px #aaaaaa;
+	background: rgb(62,214,32);
+	background: -moz-linear-gradient(-45deg, rgba(62,214,32,1) 8%, rgba(62,214,32,1) 8%, rgba(62,214,32,1) 16%, rgba(62,214,32,1) 26%, rgba(43,226,2,1) 41%, rgba(62,214,32,1) 52%, rgba(62,214,32,1) 57%, rgba(62,214,32,1) 62%, rgba(40,229,11,1) 73%, rgba(62,214,32,1) 83%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(62,214,32,1) 8%,rgba(62,214,32,1) 8%,rgba(62,214,32,1) 16%,rgba(62,214,32,1) 26%,rgba(43,226,2,1) 41%,rgba(62,214,32,1) 52%,rgba(62,214,32,1) 57%,rgba(62,214,32,1) 62%,rgba(40,229,11,1) 73%,rgba(62,214,32,1) 83%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(62,214,32,1) 8%,rgba(62,214,32,1) 8%,rgba(62,214,32,1) 16%,rgba(62,214,32,1) 26%,rgba(43,226,2,1) 41%,rgba(62,214,32,1) 52%,rgba(62,214,32,1) 57%,rgba(62,214,32,1) 62%,rgba(40,229,11,1) 73%,rgba(62,214,32,1) 83%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ed620', endColorstr='#3ed620',GradientType=1 ); 
+}
+
+		
+		/*Parte 7*/
+
+.artic1	/*segmentos del articulo*/
+{
+	display: inline-block;
+	height: 90%;
+	margin: 1% auto; 
+	width: 30%;
+	margin-left:1%;
+	margin-right: 1%;
+	position: relative;
+	
+}
+
+.artic1 h1 /*tamaño y color de la letra*/
+{
+	font-size: 20px;
+	color: #485058;*/
+	font-weight: bolder;
+	font-variant:small-caps;
+	text-align: left;
+}
+
+.artic1 h5 /*tamaño y color de la letra*/
+{	
+	font-size: 16px;
+	color: #485058;*/
+	font-weight: bolder;
+	text-align: left;
+}
+
+		/*Parte 8*/
+
+#imagenart1 /*Tamaño de fondo de los segmentos donde se colocan las imagenes*/
+{
+	margin-top: 10px;
+	margin-left: 5px; 
+	height: 30%; 
+	width: 30%; 
+}
+#imagenart1 img/*tamaño de la imagen dentro del fonfo*/
+{
+	width: 100%;
+	height: 100%;
+}
+
+
+#imgposicion:hover div  /*efecto de de proyeccion de las primeras imagenes*/
+{	
+ -moz-transform: translateY(100%) translateX(100%) rotate(0deg) scaleX(2.5);
+ -webkit-transform: translateY(100%) translateX(100%) rotate(0deg) scale(2.5);
+ -moz-transition: -moz-transform 1s ease-in-out 0.55;
+ -webkit-transition: -webkit-transform 1s ease-in-out 0.55;
+}
+	
+#imgposicion:hover h1 
+{
+ -moz-transform: translateY(-32px) rotate(0deg) scaleX(1.1);
+ -webkit-transform: translateY(-32px) rotate(0deg) scale(1.1);
+ -moz-transition: -moz-transform 1s ease-in-out 0.55;
+ -webkit-transition: -webkit-transform 1s ease-in-out 0.55;
+}
+
+#imgposicion:hover h5
+{
+ -moz-transform: translateY(-32px) rotate(0deg) scaleX(1.1);
+ -webkit-transform: translateY(-32px) rotate(0deg) scale(1.1);
+ -moz-transition: -moz-transform 1s ease-in-out 0.55;
+ -webkit-transition: -webkit-transform 1s ease-in-out 0.55;
+}
+
+
+		/*Parte 9*/
+
+#Fo /*Propiedades del Contenedor de Toda la Filosofia Organizacional*/
+{
+	height: 21%;
+	width: 50%;
+	margin-top: 3%;
+	margin-left:5%;
+	display: inline-block; 
+	background-color: #FFF;
+
+}
+
+.enunciado /*Contenedor del Subtitulo "Quien somos"*/
+{	
+	height: 6%;
+	width: 40%; 
+	text-align: center; 
+	padding-top: 16px;
+}
+
+.enunciado h3 /*Estilo de letra de la Filosofia Organizacional*/
+{
+	font-size: 24px;
+	font-weight: bolder;
+	margin-top: 0%; /*Solo asi pude hacer que el contenedor de "'¿Quien somos? se pegara al borde"*/
+	color: #FFF;
+}
+
+#ta /*Tamaño del div que contiene la primera parte de informacion*/
+{
+	height: 80%;
+	width: 95%;
+	margin: 2% auto; 
+	text-align: center;
+	padding: 0%auto;
+}
+
+.subtitulo/*letra del encabezado de la filosofia*/
+{
+	font-size: 20px;
+	font-weight: bolder;
+	color:#137F01;
+	text-align: justify;
+}
+#ta .estilo1	/*letra del contenido de la Filosofia*/
+{
+	font-size: 14px;
+	text-align: justify;
+	color: #485058;
+}
+
+
+		/*Parte 10*/
+
+#Foto1 /*primer aside donde se introdujo una imagen*/
+{	
+	display: inline-block;
+	float: right;
+	height: 18%;
+	width: 40%;
+	margin-top: 7%;
+	margin-right: 2%;
+}
+#Foto1 img /*Tamaño de la imagen dentro del 1er aside*/
+{
+	width: 100%;
+	height: 100%;
+}
+
+		
+		/*Parte 11*/
+
+.art2 /*Contenedor de segunda parte de informacion*/
+{
+	width: 100%;
+	height:14%;
+	margin-top: 3%; 
+	background-color: #FFF;
+}
+.enunciado2 /*contenedor de "Nuestros servicios"*/
+{
+	width: 20%;
+	height: 9%;
+	margin-left: 5%;
+	text-align: center;
+	padding-top: 15px; 
+}
+.enunciado2 h3 /*estilo de la letra "Nuestra Servicios"*/
+{
+	font-size: 24px;
+	font-weight: bolder;
+	margin-top: 0%; 
+	color: #FFF;
+}
+
+/*4 Segmentos*/
+.segmento1 /*segmento 1 y 3*/
+{
+	height: 38%;
+	width: 44%;
+	margin-left: 5%;
+	margin-top: 1%;
+	display: inline-block; 
+}
+.segmento2 /*segmento 2 y 4*/
+{
+	height: 38%;
+	width: 44%;
+	margin-left: 2%;
+	margin-top: 1%;
+	display: inline-block;
+}
+.icono /*espacio donde esta contenidos los iconos*/
+{	
+	margin-top: 2%; 
+	margin-left: 5%; 
+	height: 20%; 
+	width: 10%; 
+	display: inline-block; 
+}
+.icono img /*tamaño de los iconos dentro del espacio asignado*/
+{
+	width: 100%;
+	height:100%;
+}
+.encabezado /*Propiedades de los encabezados*/
+{
+	margin-top: 0%; 
+	margin-left: 2%;
+	height: 10%;
+	width: 50%;
+	display: inline-block; 
+	text-align: left; 
+	font-size: 16px;
+	font-weight: bolder;
+	color: #485058;
+}
+.espacio /*Propiedades de los parrafos*/
+{
+	margin-left: 18%;
+	font-size: 16px;
+	text-align: justify;
+	color: #485058;
+}
+
+
+		/*Parte12*/
+
+#art3/*Contenedor de los encabezados y los videos*/
+{
+	margin-left:5%;
+	margin-right: 5%;
+	margin-top: 3%;
+  width: 90%;
+  height: 11%;
+	background-color: #FFF;
+}
+
+.enun3 /*Contenedor del encabezado*/
+{
+	height: 46px;
+	width: 22%;
+	text-align: center;
+	padding-top: 16px; 
+}
+.enun3 h3 /*Propiedades del texto de encabezado "Conoce mas"*/
+{
+	font-size: 24px;
+	font-weight: bolder;
+	color: #FFF;
+	margin-top: 0%;
+}
+
+.video /*Contenedor del video y su descripcion (se dividio en 2 uno pora agricola y otro para ganadero)*/
+{
+	margin-top: 1%;
+	margin-left: 2%;
+	height: 75%;
+	width: 46%;
+	display: inline-block;
+}
+
+.play/*Contenedor exclusivamente del video*/
+{
+	margin-top: 1%;
+	height: 80%;
+	width: 100%;
+	border: solid;
+	border-color: #000;
+	border-width: 1px;
+}
+.play video /*Propiedades del video dentro del contenedor*/
+{
+	height: 100%;
+	width: 100%;
+}
+.video h3 /*Propiedades de la descripcion del video*/
+{
+	font-size: 20px;
+	font-weight: bolder;
+	color:#485058;
+}
+
+
+		/*Parte 13*/
+
+#art4 /*Contenedor de los Productos*/
+{
+	width: 100%;
+	height: 37%;
+	margin-top: 3%;
+	background-color: #FFF;
+	position: relative;
+}
+.enun4/*Contenedor del enunciado*/
+{
+	width: 20%;
+	height: 4%;
+	margin-left: 5%;
+	text-align: center;
+	padding-top: 15px;
+}
+.enun4 h3/*Estilo de la fuente dentro del enunciado*/
+{
+	font-size: 24px;
+	font-weight: bolder;
+	color: #FFF;
+	margin-top: 0%;
+}
+.seg /*segmentos de los productos*/
+{
+	width: 20%;
+	height: 44%;
+	margin-top: 2%;
+	margin-left: 4%;
+	display: inline-block;
+	background-color: #FFF;
+}
+.pp1/*Estilo de la fuente del encabezado*/
+{
+	text-align: center;	
+	font-size: 24px;
+}
+.seg div /*tamaño del contenedor de la imagen del producto*/
+{
+	margin: 2% auto;
+	width: 100%;
+	height: 48%;
+}
+.pp/*Estilo de fuente de la descripcion del producto*/
+{
+	font-size: 14px;
+	text-align: justify;
+	color: #485058;
+}
+.seg div img/*tamaño de la imagen dentro de su contenedor*/
+{
+	height: 100%;
+	width: 100%;
+}
+.seg:hover/*Efecto de los segmentos*/
+{
+	-moz-transform: translateY(0%) translateX(0%) rotate(0deg) scaleX(1.3);
+ 	-webkit-transform: translateY(0%) translateX(0%) rotate(0deg) scale(1.3);
+ 	-moz-transition: -moz-transform 1s ease-in-out 0.55;
+ 	-webkit-transition: -webkit-transform 1s ease-in-out 0.55;
+ 	background-color: #FFCF35;
+ 	color: #FFF;
+}
+#publi/*Estilo y orientacion del Primer link*/
+{
+	margin-top: 0%;
+	font-size: 16px;
+	font-weight: bolder;
+	text-align: center;
+	color: #485058;
+}
+
+
+		/*Parte 14*/
+.contacto
+{
+	margin-top: 1.6%;
+	width: 100%;
+	height: 5%;
+}
+.redes
+{
+	margin-left: 1%;
+	height: 100%;
+	width: 48%;
+	display: inline-block;
+	text-align: center;
+}
+.vinculos
+{
+	margin-top: 6%;
+	margin-left: 4%;
+	height: 50%;
+	width: 13%;
+	border:solid;
+	border-color: #FFF;
+	border-width: 2px;
+	display: inline-block;
+	padding-top: 1%;
+	-webkit-border-radius:45%;
+	-moz-border-radius:45%;
+	border-radius: 45%;
+}
+.vinculos img
+{
+	height: 100%;
+	width: 100%;
+}
+.vinculos:hover
+{
+	border-color: #000;
+	
+}
+.contacto:hover
+{
+	background-color:#375A28;
+}
+.informacion /*contiene los iconos y datos de la organizacion*/
+{
+	margin-top: 2%;
+	margin-left: 1%;
+	width: 85%;
+	height: 15%;
+	display: inline-block;
+	text-align: left;
+}
+.informacion p
+{
+	margin-top: 0%;
+	margin-left: 0%;
+	font-size: 14px;
+	font-weight: bold;
+	color:#FFF;
+}
+.icoi /*Iconos de la informacion*/
+{
+	margin-top: 1.5%;
+	margin-left: 0%;
+	display: inline-block;
+	height: 15%;
+	width: 10%;
+	text-align: center;
+}
+.icoi img
+{
+	margin-top: 0%;
+	width: 70%;
+	height: 100%;
+}
+
+		/*Parte Final*/
+
+.final
+{ 	
+	margin-top: 3%;
+	color: #000; 
+	clear: both;
+	text-align: center; 
+	padding: 1px;
+	height: 3%; 
+	position: relative;
+	font-size: 18px;
+
+}
+
+				/*Agregado de efectos*/
+
+
+.bordesombra
+{
+	-webkit-box-shadow:5px 10px 18px #aaaaaa;/*sombra de los bordes*/
+	-moz-box-shadow:5px 10px 18px #aaaaaa;
+	box-shadow: 5px 10px 18px #aaaaaa;
+}
+
+.retraso1 /*Retasos de las animaciones*/
+{
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s; 
+	animation-delay: 1.5s;
+}
+.retraso2 /*Retasos de las animaciones*/
+{
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s; 
+	animation-delay: 2s;
+}
+.retraso3 /*Retasos de las animaciones*/
+{
+	-webkit-animation-delay: 2.5s;
+	-moz-animation-delay: 2.5s; 
+	animation-delay: 2.5s;
+}
+
+
+
+/*Redireccionamiento a Contactos*/
+.contactos
+{
+	background-color: #E1E6FA;
+	margin: 10px auto; 
+	height: 800px;
+	width: 1300px;
+}
+.centrado
+{
+	text-align: center;
+	color:#485058;
+	background-color: #5DB5A4;
+}
+
+.centrado h1  
+{
+	font-size: 50px;
+}
+.centrado iframe
+{
+	width: 100%;
+}
